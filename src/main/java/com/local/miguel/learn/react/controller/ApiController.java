@@ -15,6 +15,7 @@ import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/api/")
+@CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 public class ApiController {
 
     private final PersonRepository personRepository;
